@@ -21,7 +21,7 @@ import java.util.Arrays;
 public class Liivakell {
 
     public static void main(String[] args) {
-        final int suurus = 11;
+        final int suurus = 9;
         char[][] liivakell = new char[suurus][suurus];
 
         for (int i = 0; i < liivakell.length; i++) {
