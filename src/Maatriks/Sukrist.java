@@ -16,6 +16,23 @@ import java.util.Arrays;
  */
 public class Sukrist {
 
+    public static void main(String[] args) {
+        final int suurus = 10;
+        int[][] maatriks = new int[suurus][suurus];
+
+        for (int i = 0; i < maatriks.length; i++) {
+            for (int j = 0; j < maatriks.length; j++) {
+                if (i % 2 == 0) {
+                    maatriks[i][j] =  (i + 1) * suurus - j;
+                } else {
+                    maatriks[i][j] = (i + 1) * suurus - suurus + j + 1;
+                }
+            }
+        }
+
+        printMaatriks(maatriks);
+    }
+
     // Lihtsalt abiline meetod, et maatriksit välja printida
     private static void printMaatriks(int[][] laud) {
         for (int i = 0; i < laud.length; i++) {
